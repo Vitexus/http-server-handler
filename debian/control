@@ -1,0 +1,19 @@
+Source: php-psr-http-server-handler
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/php-fig/http-server-handler
+Rules-Requires-Root: no
+
+Package: php-psr-http-server-handler
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-psr-http-message
+Description: PSR-15 HTTP Server Request Handler Interface
+ This package holds the RequestHandlerInterface for PSR-15 HTTP
+ server request handlers as defined by PHP-FIG.
